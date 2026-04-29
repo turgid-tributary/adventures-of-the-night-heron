@@ -1,5 +1,5 @@
 {
-  "name": "ian-bday",
+  "name": "TODO",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -9,13 +9,30 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
+    "@lucide/astro": "^1.14.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.2.4",
     "astro": "^6.1.10",
-    "sharp": "^0.34.3"
+    "daisyui": "^5.5.19",
+    "sharp": "^0.34.3",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.59.1",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.7.0",
+    "prettier": "3.8.3",
+    "prettier-plugin-astro": "0.14.1"
   }
 }
