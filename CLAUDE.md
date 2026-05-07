@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Rules
+
+- Run `npm run format` before committing any change.
+
 ## Commands
 
 - `npm run dev` — start dev server at `localhost:4321`
