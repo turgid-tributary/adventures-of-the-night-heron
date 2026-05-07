@@ -13,12 +13,12 @@ const currentTop = "/" + (subpath?.[0] || "");
 ---
 
 <header
-    class="navbar bg-base-100 border-b border-base-200 sticky top-0 z-50 px-4 max-md:flex-col"
+    class="navbar bg-base-100 border-b border-base-200 sticky top-0 z-50 px-4 max-lg:flex-col"
 >
-    <a href="/" class="md:hidden btn btn-ghost normal-case text-lg font-bold">
+    <a href="/" class="lg:hidden btn btn-ghost normal-case text-lg font-bold">
         {SITE_TITLE}
     </a>
-    <div class="navbar-start max-md:hidden">
+    <div class="navbar-start max-lg:hidden">
         <a href="/" class="btn btn-ghost normal-case text-lg font-bold">
             {SITE_TITLE}
         </a>
@@ -42,7 +42,7 @@ const currentTop = "/" + (subpath?.[0] || "");
             ))
         }
     </nav>
-    <div class="sm:navbar-end flex gap-1 max-sm:mt-3">
+    <div class="lg:navbar-end flex gap-1 max-lg:mt-3">
         <label class="flex cursor-pointer gap-2">
             <Sun class="size-5" />
             <input
