@@ -34,6 +34,10 @@ Integrations & assets:
 - Styling: Tailwind CSS v4 + DaisyUI 5, configured CSS-first in `src/styles/global.css` (no `tailwind.config.*` file). DaisyUI is loaded via `@plugin "daisyui"` with `light --default, dark --prefersdark` themes registered. The stylesheet is imported once from `src/components/BaseHead.astro`, which every page includes — there is no per-page CSS import. Prefer DaisyUI component classes (`btn`, `card`, `navbar`, etc.) and Tailwind utilities for new UI; reach for scoped Astro `<style>` blocks only when DaisyUI/Tailwind can't express the styling.
 - Static assets that should be served as-is go in `public/`; assets imported through Astro (and thus optimized) go in `src/assets/`.
 
+## Deployment
+
+The site deploys directly to Cloudflare Pages via its git integration — pushes to the production branch trigger a Cloudflare-side build of `npm run build` and publish `./dist/`. There is no CI workflow, deploy script, or manual upload step in this repo; merging to the production branch is the deploy.
+
 ## Adding a new chapter
 
 1. Create a new file in `src/content/blog/` named after the next ordinal — e.g. if `chapter-four.md` is the latest, the next file is `chapter-five.md`.
